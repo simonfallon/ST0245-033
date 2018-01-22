@@ -1,0 +1,32 @@
+Punto 2:
+
+public class Punto2D {
+    float x; 
+    float y;
+    
+    Punto2D(float x, float y){
+       this.x = x;
+       this.y = y; 
+        
+    }  
+    float getX(){
+        return x;
+    }
+    
+    float getY(){
+        return y;
+    }
+    
+    float radio ({
+        return (float) Math.sqrt(x*x+y*y);
+    }
+    
+    float angulo (){
+        return (float) Math.atan2(x, y);
+    }
+            
+            
+    float distancia (Punto2D p){
+       return (float) Math.sqrt((x-p.getX())*(x-p.getX())+(y-p.getY())*(y-p.getY())); 
+    }
+}
